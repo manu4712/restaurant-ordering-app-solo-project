@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Smythe", system-ui, sans-serif;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: url(./bg-img/ferks-guare-KEZdWfYD-ow-unsplash\ 1.svg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 167px;
+  position: relative;
+}
+.header-content {
+  color: #ffffff;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  line-height: 30px;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+}
+.add-btn-container {
+  margin-left: auto;
+}
+.item-info button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cbc9c9;
+  font-size: 16px;
+}
+
+.emoji {
+  display: inline-block;
+  /* width: 70px;
+  height: height 90px; */
+  font-size: 70px;
+}
