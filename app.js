@@ -51,6 +51,18 @@ document.addEventListener("click", function (e) {
     renderOrder();
     updateOrderButton();
   }
+
+  if (e.target.dataset.order) {
+    document.getElementById("modal-card").style.display = "flex";
+  }
+
+  if (e.target.dataset.pay) {
+    e.preventDefault();
+    document.getElementById("modal-card").style.display = "none";
+    document.getElementById("sec-2").innerHTML =
+      `Thanks,${document.getElementById("username").value}! Your order is on its way!`;
+    document.getElementById("sec-2").classList.add("final-state");
+  }
 });
 
 function renderOrder() {

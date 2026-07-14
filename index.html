@@ -35,10 +35,30 @@
                     <p id="total-price">$0</p>
                 </div>
                 <div class="order-btn-container">
-                    <button id="order-btn" disabled>Complete Order</button>
+                    <button data-order="order-received" id="order-btn" disabled>Complete Order</button>
                 </div>
             </section>
-            <div id="modal"></div>
+            <section id="modal-card">
+
+                <form>
+                    <h3>Enter card details</h3>
+                    <div>
+                        <input type="text" name="user-name" id="username" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <input type="number" minlength=12 maxlength=12 name="user-name"
+                            placeholder="Enter your card number" required>
+                    </div>
+                    <div>
+                        <input type="number" minlength=3 maxlength=3 name="user-name"
+                            placeholder="Enter your cvv number" required>
+                    </div>
+                    <div>
+                        <button data-pay="pay" id="pay-btn">Pay</button>
+                    </div>
+                </form>
+
+            </section>
         </main>
     </div>
 </body>
