@@ -5,6 +5,7 @@ const menuArray = [
     id: 0,
     price: 14,
     emoji: "🍕",
+    hasAdded: false,
   },
   {
     name: "Hamburger",
@@ -12,6 +13,7 @@ const menuArray = [
     price: 12,
     emoji: "🍔",
     id: 1,
+    hasAdded: false,
   },
   {
     name: "Beer",
@@ -19,6 +21,7 @@ const menuArray = [
     price: 12,
     emoji: "🍺",
     id: 2,
+    hasAdded: false,
   },
 ];
 
