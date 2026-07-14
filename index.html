@@ -46,12 +46,12 @@
                         <input type="text" name="user-name" id="username" placeholder="Enter your name" required>
                     </div>
                     <div>
-                        <input type="number" minlength=12 maxlength=12 name="user-name"
-                            placeholder="Enter your card number" required>
+                        <input type="text" inputmode="numeric" pattern="[0-9]{12}" required
+                            placeholder="Enter your card num(12 digits)">
                     </div>
                     <div>
-                        <input type="number" minlength=3 maxlength=3 name="user-name"
-                            placeholder="Enter your cvv number" required>
+                        <input type="text" inputmode="numeric" pattern="[0-9]{3}" required
+                            placeholder="Enter your CVV (3 digits)">
                     </div>
                     <div>
                         <button data-pay="pay" id="pay-btn">Pay</button>
